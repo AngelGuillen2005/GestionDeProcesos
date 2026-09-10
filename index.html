@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Restaurante especializado en hamburguesas, hot dogs, papas y combos."
+    >
+
+    <title>Urban Bites | Hamburguesas y Hot Dogs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Navegación principal">
+
+            <a href="index.html" class="logo">
+                URBAN<span>BITES</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="index.html" class="active">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="menu.html">Menú</a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <a href="menu.html" class="nav-order-button">
+                Ver menú
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <p class="hero-label">Sabor urbano en cada mordida</p>
+
+                <h1>
+                    Hamburguesas grandes,
+                    <span>sabor inolvidable</span>
+                </h1>
+
+                <p class="hero-description">
+                    Hamburguesas, hot dogs y papas preparados al momento
+                    con ingredientes frescos y combinaciones irresistibles.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="menu.html" class="button button-primary">
+                        Explorar el menú
+                    </a>
+
+                    <a href="#favoritos" class="button button-secondary">
+                        Ver favoritos
+                    </a>
+                </div>
+
+                <div class="hero-information">
+                    <div>
+                        <strong>100%</strong>
+                        <span>Preparado al momento</span>
+                    </div>
+
+                    <div>
+                        <strong>+20</strong>
+                        <span>Opciones disponibles</span>
+                    </div>
+
+                    <div>
+                        <strong>Local</strong>
+                        <span>Ingredientes frescos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="favorites section" id="favoritos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Los favoritos</p>
+                        <h2>Lo más pedido de la casa</h2>
+                    </div>
+
+                    <a href="menu.html" class="text-link">
+                        Ver menú completo →
+                    </a>
+                </div>
+
+                <div class="products-grid">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                                alt="Hamburguesa con carne, queso y vegetales"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Favorita</span>
+                        </div>
+
+                        <div class="product-content">
+                            <p class="product-category">Hamburguesas</p>
+                            <h3>Urban Double</h3>
+
+                            <p>
+                                Doble carne, queso derretido, vegetales frescos
+                                y nuestra salsa especial.
+                            </p>
+
+                            <a href="menu.html#hamburguesas">
+                                Conocer opciones →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=900&q=85"
+                                alt="Hot dog preparado con diferentes ingredientes"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Clásico</span>
+                        </div>
+
+                        <div class="product-content">
+                            <p class="product-category">Hot dogs</p>
+                            <h3>Street Dog</h3>
+
+                            <p>
+                                Salchicha, queso, cebolla, aderezo de la casa
+                                y pan ligeramente tostado.
+                            </p>
+
+                            <a href="menu.html#hotdogs">
+                                Conocer opciones →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
+                                alt="Papas fritas crujientes"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Para compartir</span>
+                        </div>
+
+                        <div class="product-content">
+                            <p class="product-category">Complementos</p>
+                            <h3>Urban Fries</h3>
+
+                            <p>
+                                Papas crujientes acompañadas con queso,
+                                aderezo especial y toppings.
+                            </p>
+
+                            <a href="menu.html#complementos">
+                                Conocer opciones →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CARACTERÍSTICAS -->
+        <section class="features section">
+            <div class="container">
+
+                <div class="center-heading">
+                    <p class="section-label">Nuestra esencia</p>
+                    <h2>Mucho más que comida rápida</h2>
+                    <p>
+                        Cuidamos cada detalle para ofrecerte una experiencia
+                        llena de sabor.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Ingredientes frescos</h3>
+                        <p>
+                            Seleccionamos ingredientes de calidad para preparar
+                            cada orden.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>Preparado al momento</h3>
+                        <p>
+                            Cocinamos tu pedido cuando lo solicitas para que
+                            llegue caliente.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>Sabor único</h3>
+                        <p>
+                            Combinaciones y salsas especiales que distinguen
+                            nuestros platillos.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">04</div>
+                        <h3>Para todos</h3>
+                        <p>
+                            Hamburguesas, hot dogs, complementos y combos para
+                            compartir.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOCIÓN -->
+        <section class="promotion section">
+            <div class="container promotion-container">
+
+                <div class="promotion-content">
+                    <p class="section-label">El combo perfecto</p>
+
+                    <h2>
+                        Tu antojo merece algo
+                        <span>extraordinario</span>
+                    </h2>
+
+                    <p>
+                        Descubre nuestras hamburguesas, hot dogs, papas,
+                        bebidas y combos especiales.
+                    </p>
+
+                    <a href="menu.html" class="button button-primary">
+                        Descubrir el menú
+                    </a>
+                </div>
+
+                <div class="promotion-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=85"
+                        alt="Hamburguesa acompañada con papas"
+                        loading="lazy"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LLAMADA FINAL -->
+        <section class="final-call">
+            <div class="container final-call-content">
+                <div>
+                    <p class="section-label">¿Tienes hambre?</p>
+                    <h2>Encuentra tu próximo favorito</h2>
+                </div>
+
+                <div class="final-call-buttons">
+                    <a href="menu.html" class="button button-light">
+                        Consultar menú
+                    </a>
+
+                    <a href="contacto.html" class="button button-outline-light">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    URBAN<span>BITES</span>
+                </a>
+
+                <p>
+                    Hamburguesas, hot dogs y mucho sabor en un solo lugar.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navegación</h3>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Horario</h3>
+
+                <p>Lunes a jueves: 12:00–22:00</p>
+                <p>Viernes a domingo: 12:00–23:30</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="currentYear"></span> Urban Bites.
+                Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
