@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de hamburguesas, hot dogs, complementos y bebidas de Urban Bites.">
+  <title>Menú | Urban Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a href="index.html" class="logo">URBAN<span>BITES</span></a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="active">Menú</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="resenas.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#platillos" class="nav-order-button">Ver platillos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-hero">
+      <div class="container menu-hero-content">
+        <p class="section-label">Preparado al momento</p>
+        <h1>Nuestro menú</h1>
+        <p>Hamburguesas, hot dogs y complementos con auténtico sabor urbano.</p>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="platillos">
+      <div class="container">
+        <div class="menu-heading">
+          <div><p class="section-label">Elige tu favorito</p><h2>Platillos Urban Bites</h2></div>
+          <label class="menu-search"><span>Buscar</span><input id="menuSearch" type="search" placeholder="Ej. hamburguesa" aria-label="Buscar platillo"></label>
+        </div>
+
+        <div class="category-buttons" aria-label="Categorías del menú">
+          <button class="category-button active" type="button" data-category="todos">Todos</button>
+          <button class="category-button" type="button" data-category="hamburguesas">Hamburguesas</button>
+          <button class="category-button" type="button" data-category="hotdogs">Hot dogs</button>
+          <button class="category-button" type="button" data-category="complementos">Complementos</button>
+          <button class="category-button" type="button" data-category="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="dish-card" data-category="hamburguesas" data-name="urban clásica hamburguesa">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Hamburguesa Urban Clásica" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Hamburguesa</span><div class="dish-title"><h3>Urban Clásica</h3><strong>$115</strong></div><p>Carne de res, queso americano, lechuga, tomate, cebolla y salsa de la casa.</p></div>
+          </article>
+          <article class="dish-card" data-category="hamburguesas" data-name="urban double doble hamburguesa">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85" alt="Hamburguesa Urban Double" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Hamburguesa</span><div class="dish-title"><h3>Urban Double</h3><strong>$155</strong></div><p>Doble carne, doble queso, tocino, pepinillos y aderezo especial.</p></div>
+          </article>
+          <article class="dish-card" data-category="hamburguesas" data-name="bbq fire hamburguesa">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=85" alt="Hamburguesa BBQ Fire" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Hamburguesa</span><div class="dish-title"><h3>BBQ Fire</h3><strong>$145</strong></div><p>Carne de res, queso, aros de cebolla, jalapeño y salsa BBQ.</p></div>
+          </article>
+          <article class="dish-card" data-category="hotdogs" data-name="street dog hot dog">
+            <img src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=900&q=85" alt="Hot dog Street Dog" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Hot dog</span><div class="dish-title"><h3>Street Dog</h3><strong>$85</strong></div><p>Salchicha, queso, cebolla, tomate, mostaza y aderezo de la casa.</p></div>
+          </article>
+          <article class="dish-card" data-category="hotdogs" data-name="bacon dog hot dog tocino">
+            <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=900&q=85" alt="Hot dog con tocino" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Hot dog</span><div class="dish-title"><h3>Bacon Dog</h3><strong>$105</strong></div><p>Salchicha envuelta en tocino, queso, cebolla caramelizada y salsa BBQ.</p></div>
+          </article>
+          <article class="dish-card" data-category="complementos" data-name="urban fries papas">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85" alt="Papas Urban Fries" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Complemento</span><div class="dish-title"><h3>Urban Fries</h3><strong>$75</strong></div><p>Papas crujientes con queso, tocino, cebollín y aderezo especial.</p></div>
+          </article>
+          <article class="dish-card" data-category="complementos" data-name="aros de cebolla">
+            <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=900&q=85" alt="Aros de cebolla" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Complemento</span><div class="dish-title"><h3>Aros de Cebolla</h3><strong>$65</strong></div><p>Aros empanizados y crujientes acompañados con aderezo de la casa.</p></div>
+          </article>
+          <article class="dish-card" data-category="bebidas" data-name="malteada vainilla chocolate fresa bebida">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85" alt="Malteada cremosa" loading="lazy">
+            <div class="dish-content"><span class="dish-category">Bebida</span><div class="dish-title"><h3>Malteada</h3><strong>$70</strong></div><p>Elige entre vainilla, chocolate o fresa, terminada con crema batida.</p></div>
+          </article>
+        </div>
+        <p class="empty-menu" id="emptyMenu" hidden>No encontramos platillos con esa búsqueda.</p>
+      </div>
+    </section>
+
+    <section class="menu-call"><div class="container menu-call-content"><div><p class="section-label">Combina a tu manera</p><h2>Convierte tu platillo en combo</h2><p>Agrega papas y bebida a cualquiera de nuestras opciones.</p></div><a href="contacto.html" class="button button-primary">Contáctanos</a></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a href="index.html" class="logo footer-logo">URBAN<span>BITES</span></a><p>Hamburguesas, hot dogs y mucho sabor en un solo lugar.</p></div><div><h3>Navegación</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="resenas.html">Reseñas</a></li><li><a href="contacto.html">Contacto</a></li></ul></div><div><h3>Horario</h3><p>Lunes a jueves: 12:00–22:00</p><p>Viernes a domingo: 12:00–23:30</p></div></div><div class="footer-bottom"><p>© <span id="currentYear"></span> Urban Bites. Todos los derechos reservados.</p></div></footer>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

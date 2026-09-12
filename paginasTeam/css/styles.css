@@ -1,0 +1,283 @@
+:root {
+  --dark: #111111;
+  --dark-soft: #1d1d1d;
+  --white: #ffffff;
+  --gray: #666666;
+  --border: #dedede;
+  --primary: #ffb000;
+  --primary-dark: #d88700;
+  --red: #d83a2e;
+  --shadow: 0 14px 35px rgba(0, 0, 0, .14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--dark);
+  background: var(--white);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  color: var(--white);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  min-height: 82px;
+  gap: 28px;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  transition: color .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.nav-order-button,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav-order-button,
+.button-primary {
+  color: var(--dark);
+  background: var(--primary);
+}
+
+.menu-button {
+  display: none;
+  padding: 5px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--white);
+}
+
+.section-label {
+  margin: 0 0 8px;
+  color: var(--red);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.menu-call {
+  padding: 75px 0;
+  color: var(--white);
+  background: var(--dark-soft);
+}
+
+.menu-call-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu-call h2 {
+  margin-bottom: 10px;
+}
+
+.menu-call p:last-child {
+  margin-bottom: 0;
+  color: #cccccc;
+}
+
+.footer {
+  padding: 65px 0 0;
+  color: #dddddd;
+  background: #0b0b0b;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr;
+  gap: 45px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  max-width: 290px;
+  color: #999999;
+  font-size: .85rem;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  color: var(--white);
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .85rem;
+}
+
+.footer li + li {
+  margin-top: 7px;
+}
+
+.footer li a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  padding: 18px 20px;
+  border-top: 1px solid #292929;
+  text-align: center;
+}
+
+.footer-bottom p {
+  max-width: none;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 30px, 560px);
+  }
+
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: block;
+    order: 3;
+  }
+
+  .nav-order-button {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    display: none;
+    padding: 18px;
+    background: var(--dark-soft);
+    text-align: center;
+  }
+
+  .nav-links.is-open {
+    display: grid;
+    gap: 15px;
+  }
+
+  .menu-heading,
+  .menu-call-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu-search,
+  .menu-search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
